@@ -1,0 +1,902 @@
+[
+    {
+        "id": 1335996,
+        "participantHome": {
+            "id": 173273,
+            "displayName": "DC Eilenstedt Gladiators B"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35141,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-11-13T19:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336013,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173270,
+            "displayName": "TSV Neindorf A"
+        },
+        "round": {
+            "id": 35144,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-12T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336008,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173277,
+            "displayName": "Bad Bulls Schandelah A"
+        },
+        "round": {
+            "id": 35143,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336048,
+        "participantHome": {
+            "id": 173275,
+            "displayName": "VfL Wolfsburg e.V. C"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35151,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-03T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335991,
+        "participantHome": {
+            "id": 173269,
+            "displayName": "SV B\u00fcddenstedt Darts A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35140,
+            "name": "Spieltag 5"
+        },
+        "datePlanned": "2026-10-10T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336003,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173275,
+            "displayName": "VfL Wolfsburg e.V. C"
+        },
+        "round": {
+            "id": 35142,
+            "name": "Spieltag 7"
+        },
+        "datePlanned": "2026-11-07T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336043,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173273,
+            "displayName": "DC Eilenstedt Gladiators B"
+        },
+        "round": {
+            "id": 35150,
+            "name": "Spieltag 15"
+        },
+        "datePlanned": "2027-03-20T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336019,
+        "participantHome": {
+            "id": 173274,
+            "displayName": "Mad House Fallersleben B"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35145,
+            "name": "Spieltag 10"
+        },
+        "datePlanned": "2027-01-09T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336037,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173269,
+            "displayName": "SV B\u00fcddenstedt Darts A"
+        },
+        "round": {
+            "id": 35149,
+            "name": "Spieltag 14"
+        },
+        "datePlanned": "2027-03-06T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335977,
+        "participantHome": {
+            "id": 173267,
+            "displayName": "DC Old No.7 S\u00fclfeld A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35137,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-08-29T16:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "3:9 (14:31)"
+    },
+    {
+        "id": 1336030,
+        "participantHome": {
+            "id": 173282,
+            "displayName": "DC Tops Tappenbeck A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35148,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-19T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335981,
+        "participantHome": {
+            "id": 173279,
+            "displayName": "DC Iron Oaks Saalsdorf B"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35138,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-19T18:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "3:9 (15:30)"
+    },
+    {
+        "id": 1336028,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173279,
+            "displayName": "DC Iron Oaks Saalsdorf B"
+        },
+        "round": {
+            "id": 35147,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336054,
+        "participantHome": {
+            "id": 173277,
+            "displayName": "Bad Bulls Schandelah A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35152,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335988,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173282,
+            "displayName": "DC Tops Tappenbeck A"
+        },
+        "round": {
+            "id": 35139,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-09-24T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336023,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173267,
+            "displayName": "DC Old No.7 S\u00fclfeld A"
+        },
+        "round": {
+            "id": 35146,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-23T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335973,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173274,
+            "displayName": "Mad House Fallersleben B"
+        },
+        "round": {
+            "id": 35136,
+            "name": "Spieltag 1"
+        },
+        "datePlanned": "2026-08-22T18:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "8:4 (26:15)"
+    },
+    {
+        "id": 1336058,
+        "participantHome": {
+            "id": 173270,
+            "displayName": "TSV Neindorf A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "round": {
+            "id": 35153,
+            "name": "Spieltag 18"
+        },
+        "datePlanned": "2027-05-08T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365231,
+        "participantHome": {
+            "id": 173392,
+            "displayName": "Steel Dart Society S\u00fcpplingen A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35588,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-18T16:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "4:8 (20:28)"
+    },
+    {
+        "id": 1365276,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173392,
+            "displayName": "Steel Dart Society S\u00fcpplingen A"
+        },
+        "round": {
+            "id": 35597,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365257,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173378,
+            "displayName": "SV Brunsrode A"
+        },
+        "round": {
+            "id": 35593,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365301,
+        "participantHome": {
+            "id": 173378,
+            "displayName": "SV Brunsrode A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35602,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T13:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365222,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173391,
+            "displayName": "VfL Wolfsburg e.V. I"
+        },
+        "round": {
+            "id": 35586,
+            "name": "Spieltag 1"
+        },
+        "datePlanned": "2026-08-22T15:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "12:0 (36:8)"
+    },
+    {
+        "id": 1365236,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173386,
+            "displayName": "Werner\u00b4s DC Helmstedt C"
+        },
+        "round": {
+            "id": 35589,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-10-03T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365283,
+        "participantHome": {
+            "id": 173386,
+            "displayName": "Werner\u00b4s DC Helmstedt C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35598,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-20T14:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365292,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173388,
+            "displayName": "DC Eilenstedt Gladiators E"
+        },
+        "round": {
+            "id": 35600,
+            "name": "Spieltag 15"
+        },
+        "datePlanned": "2027-03-20T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365295,
+        "participantHome": {
+            "id": 173380,
+            "displayName": "Flightclub Velpke C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35601,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-02T16:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365271,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173383,
+            "displayName": "Lutterwoelfe C"
+        },
+        "round": {
+            "id": 35596,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-23T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365251,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173380,
+            "displayName": "Flightclub Velpke C"
+        },
+        "round": {
+            "id": 35592,
+            "name": "Spieltag 7"
+        },
+        "datePlanned": "2026-11-07T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365263,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173390,
+            "displayName": "Steffi\u00b4s Dart Meile A"
+        },
+        "round": {
+            "id": 35594,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-12T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365225,
+        "participantHome": {
+            "id": 173383,
+            "displayName": "Lutterwoelfe C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35587,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-08-28T16:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "2:10 (13:34)"
+    },
+    {
+        "id": 1365267,
+        "participantHome": {
+            "id": 173391,
+            "displayName": "VfL Wolfsburg e.V. I"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35595,
+            "name": "Spieltag 10"
+        },
+        "datePlanned": "2027-01-09T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365308,
+        "participantHome": {
+            "id": 173390,
+            "displayName": "Steffi\u00b4s Dart Meile A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35603,
+            "name": "Spieltag 18"
+        },
+        "datePlanned": "2027-05-08T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365248,
+        "participantHome": {
+            "id": 173388,
+            "displayName": "DC Eilenstedt Gladiators E"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "round": {
+            "id": 35591,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-10-24T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354720,
+        "participantHome": {
+            "id": 173527,
+            "displayName": "SV Brunsrode B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35430,
+            "name": "Spieltag 7"
+        },
+        "datePlanned": "2026-11-07T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354707,
+        "participantHome": {
+            "id": 173521,
+            "displayName": "DC Shamrock C"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35427,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-09-26T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354762,
+        "participantHome": {
+            "id": 173520,
+            "displayName": "VfL Wolfsburg e.V. H"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35438,
+            "name": "Spieltag 15"
+        },
+        "datePlanned": "2027-03-20T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354702,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173523,
+            "displayName": "Black Bulls Hoitlinger SV B"
+        },
+        "round": {
+            "id": 35426,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-12T15:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "9:3 (28:14)"
+    },
+    {
+        "id": 1354751,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173521,
+            "displayName": "DC Shamrock C"
+        },
+        "round": {
+            "id": 35436,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-20T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354771,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173524,
+            "displayName": "Green Panthers Wagenhoff B"
+        },
+        "round": {
+            "id": 35440,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354725,
+        "participantHome": {
+            "id": 173524,
+            "displayName": "Green Panthers Wagenhoff B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35431,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354711,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173529,
+            "displayName": "Dartattack Meinersen A"
+        },
+        "round": {
+            "id": 35428,
+            "name": "Spieltag 5"
+        },
+        "datePlanned": "2026-10-10T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354743,
+        "participantHome": {
+            "id": 173530,
+            "displayName": "Blue Bulls Flechtorf B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35434,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-24T16:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354697,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173530,
+            "displayName": "Blue Bulls Flechtorf B"
+        },
+        "round": {
+            "id": 35425,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-09-04T16:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "6:6 (22:26)"
+    },
+    {
+        "id": 1354777,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173526,
+            "displayName": "SteelBees K\u00e4storf A"
+        },
+        "round": {
+            "id": 35441,
+            "name": "Spieltag 18"
+        },
+        "datePlanned": "2027-05-08T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354716,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173520,
+            "displayName": "VfL Wolfsburg e.V. H"
+        },
+        "round": {
+            "id": 35429,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-10-24T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354767,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173527,
+            "displayName": "SV Brunsrode B"
+        },
+        "round": {
+            "id": 35439,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-03T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354730,
+        "participantHome": {
+            "id": 173526,
+            "displayName": "SteelBees K\u00e4storf A"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35432,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-11T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354757,
+        "participantHome": {
+            "id": 173529,
+            "displayName": "Dartattack Meinersen A"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35437,
+            "name": "Spieltag 14"
+        },
+        "datePlanned": "2027-03-07T15:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354746,
+        "participantHome": {
+            "id": 173523,
+            "displayName": "Black Bulls Hoitlinger SV B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "round": {
+            "id": 35435,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    }
+]

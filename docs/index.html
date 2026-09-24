@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+ 
+    <link rel="stylesheet" href="css/stylesheet.css">
 
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>    
+    <link href="https://unpkg.com/tabulator-tables@6.5.0/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.5.0/dist/js/tabulator.min.js"></script>
+    <!-- Pico CSS -->
+
+
+    <script type="text/javascript" src="js/luxon.js"></script>
+
+    <!-- Your custom styling -->
+    <link rel="stylesheet" href        :root {
+            --nav-height: 70px;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--pico-background-color);
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content-container {
+            padding-top: 1rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .page-loading {
+            text-align: center;
+            padding: 3rem;
+            color: gray;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="container-fluid">
+    <nav>
+        <ul>
+            <li class="header-brand">
+                <img class="header-logo" src="https://i0.wp.com/tsv-danndorf.de/wp-content/uploads/2023/01/wappen_tsv_danndorf_website.png?w=498&ssl=1" alt="TSV Danndorf Wappen">
+                <strong>TSV Danndorf Dart</strong>
+            </li>
+        </ul>
+
+        <ul class="nav-buttons">
+            <li>
+                <button onclick="loadPage('dashboard')">
+                    Übersicht
+                </button>
+            </li>
+
+            <li>
+                <button onclick="loadPage('table')">
+                    Spieltage
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container-fluid content-container">
+    <div id="content">
+        <div class="page-loading">
+            Loading...
+        </div>
+    </div>
+
+</main>
+
+
+<script>
+
+ async function loadPage(pageName) {
+
+    const container = document.getElementById("content");
+
+    try {
+
+        container.innerHTML = `
+            <div class="page-loading">
+                Loading ${pageName}...
+            </div>
+        `;
+
+        const response =
+            await fetch(`pages/${pageName}.html`);
+
+        if (!response.ok) {
+            throw new Error(
+                `Failed to load ${pageName}`
+            );
+        }
+
+        const html =
+            await response.text();
+
+        container.innerHTML = html;
+
+        if (
+            window.pages &&
+            typeof window.pages[pageName] === "function"
+        ) {
+            console.log("Initializing page:", pageName);
+            await window.pages[pageName]();
+        }
+
+        window.history.pushState(
+            {},
+            "",
+            `#${pageName}`
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        container.innerHTML = `
+            <article>
+                <h3>Error</h3>
+                <p>
+                    Could not load page '${pageName}'.
+                </p>
+            </article>
+        `;
+    }
+}
+
+    function loadInitialPage() {
+
+        let page = location.hash.replace("#", "");
+
+        if (!page) {
+            page = "dashboard";
+        }
+
+        loadPage(page);
+    }
+
+    window.addEventListener(
+        "DOMContentLoaded",
+        loadInitialPage
+    );
+
+</script>
+
+</body>
+</html>
