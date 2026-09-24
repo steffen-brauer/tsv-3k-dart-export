@@ -2,106 +2,156 @@ let table;
 
 window.pages = window.pages || {};
 
-window.pages.table = async function() {
+const TSV_RED = "#be2828";
+
+
+window.pages.table = async function () {
+
     const data = await loadData();
 
-    const statusValues =
-        [...new Set(
-            data.map(x => x.active)
-        )]
+
+    /* =========================================
+       Status Filter
+       ========================================= */
+
+    const statusValues = [
+        ...new Set(
+            data
+                .map(x => x.active)
+        )
+    ]
         .filter(Boolean)
         .sort();
 
+
     const statusSelect =
-        document.getElementById(
-            "status-filter"
-        );
+        document.getElementById("status-filter");
 
-    statusValues.forEach(status => {
 
-        const option =
-            document.createElement("option");
+    if (statusSelect) {
 
-        option.value = status;
-        option.textContent = status;
+        statusValues.forEach(status => {
 
-        statusSelect.appendChild(option);
+            const option =
+                document.createElement("option");
 
-    });
+            option.value = status;
+            option.textContent = status;
+
+            statusSelect.appendChild(option);
+
+        });
+
+    }
+
+
+    /* =========================================
+       Tabulator
+       ========================================= */
 
     table = new Tabulator(
         "#table-container",
         {
+
             data: data,
+
             layout: "fitDataStretch",
-            //height: "700px",
+
             selectableRows: false,
+
             pagination: false,
-            //paginationSize: 100,
+
+
+            /* ---------------------------------
+               Sorting
+               --------------------------------- */
+
             initialSort: [
                 {
                     column: "datePlanned",
                     dir: "asc"
                 }
-            ],            
+            ],
+
+
+            /* ---------------------------------
+               Columns
+               --------------------------------- */
+
             columns: [
 
-                // {
-                //     //formatter: "rowSelection",
-                //     //titleFormatter: "rowSelection",
-                //     width: 50,
-                //     hozAlign: "center",
-                //     headerSort: false
-                // },
-
-                // {
-                //     title: "ID",
-                //     field: "id",
-                //     width: 100
-                // },
-
                 {
-                    formatter: "datetime",
-                    formatterParams:{
-
-
-                        inputFormat:"yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
-                        outputFormat:"dd.MM.yyyy HH:mm",
-                        invalidPlaceholder:"(invalid date)",
-                        timezone:"Europe/Berlin"
-                    },
                     title: "Datum",
                     field: "datePlanned",
+
+                    formatter: "datetime",
+
+                    formatterParams: {
+
+                        inputFormat:
+                            "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+
+                        outputFormat:
+                            "dd.MM.yyyy HH:mm",
+
+                        invalidPlaceholder:
+                            "(ungültiges Datum)",
+
+                        timezone:
+                            "Europe/Berlin"
+                    },
+
                     resizable: false
                 },
 
+
                 {
-                    // headerFilter:"list",
-                    // headerFilterParams: {valuesLookup:true, clearable:true},
+                    title: "Event",
+                    field: "event.name",
+
+                    resizable: false
+                },
+
+
+                {
+                    title: "Runde",
+                    field: "round.name",
+
+                    resizable: false
+                },
+
+
+                {
                     title: "Heim",
                     field: "participantHome.displayName",
+
                     resizable: false,
-                    formatter: conditionalTextColor
+
+                    formatter:
+                        conditionalTextColor
                 },
+
+
                 {
                     title: "Ergebnis",
                     field: "result",
-                    resizable: false
+
+                    resizable: false,
+
+                    formatter:
+                        resultFormatter
                 },
+
 
                 {
                     title: "Gast",
                     field: "participantAway.displayName",
+
                     resizable: false,
-                    formatter: conditionalTextColor
-                },
 
-                // {
-                //     title: "Status",
-                //     field: "status",
-                //     resizable: false
-                // },
-
+                    formatter:
+                        conditionalTextColor
+                }
 
             ]
 
@@ -109,98 +159,246 @@ window.pages.table = async function() {
     );
 
 
-    registerFilters();
+    /* =========================================
+       Filters
+       ========================================= */
 
+    registerFilters();
 
 };
 
+
+/* =============================================
+   TSV Team hervorheben
+   ============================================= */
 
 function conditionalTextColor(cell) {
 
     const value = cell.getValue();
 
-    if (/TSV Danndorf/i.test(value)) {
-        cell.getElement().style.color = "red";
-        cell.getElement().style.fontWeight = "bold";
+    if (!value) {
+        return "";
     }
+
+
+    const element =
+        cell.getElement();
+
+
+    if (/TSV Danndorf/i.test(String(value))) {
+
+        element.style.color = TSV_RED;
+
+        element.style.fontWeight = "700";
+
+    }
+
+
     return value;
 }
 
 
+/* =============================================
+   Ergebnis formatieren
+   ============================================= */
 
+function resultFormatter(cell) {
 
-function quickFilter(value, columns) {
-    table.setFilter(function(row) {
+    const value = cell.getValue();
 
-    const data = row.getData();
+    if (!value) {
+        return "";
+    }
 
-    return columns.some(col =>
-        String(data[col] || "")
-            .toUpperCase()
-            .includes(value.toUpperCase())
-        );
-    });
+    return value;
 }
 
 
+/* =============================================
+   Quick Filter
+   ============================================= */
+
+function quickFilter(value, columns) {
+
+    if (!table) {
+        return;
+    }
+
+
+    if (!value) {
+
+        table.clearFilter();
+
+        return;
+    }
+
+
+    const searchValue =
+        value.toUpperCase();
+
+
+    table.setFilter(function (row) {
+
+        const data =
+            row.getData();
+
+
+        return columns.some(col => {
+
+            return String(
+                data[col] || ""
+            )
+                .toUpperCase()
+                .includes(searchValue);
+
+        });
+
+    });
+
+}
+
+
+/* =============================================
+   Register Filters
+   ============================================= */
+
 function registerFilters() {
+
+
+    /* -----------------------------------------
+       Global Search
+       ----------------------------------------- */
 
     const globalSearch =
         document.getElementById(
             "global-search"
         );
 
-    globalSearch.addEventListener(
-        "keyup",
-        function () {
 
-            const value =
-                this.value.toLowerCase();
+    if (globalSearch) {
 
-            if (!value) {
+        globalSearch.addEventListener(
+            "keyup",
+            function () {
 
-                table.clearFilter();
+                const value =
+                    this.value
+                        .trim()
+                        .toLowerCase();
 
-                updateStatistics();
 
-                return;
+                if (!value) {
+
+                    table.clearFilter();
+
+                    if (
+                        typeof updateStatistics ===
+                        "function"
+                    ) {
+                        updateStatistics();
+                    }
+
+                    return;
+                }
+
+
+                table.setFilter(function (row) {
+
+                    return JSON.stringify(
+                        row.getData()
+                    )
+                        .toLowerCase()
+                        .includes(value);
+
+                });
+
+
+                if (
+                    typeof updateStatistics ===
+                    "function"
+                ) {
+                    updateStatistics();
+                }
+
             }
+        );
 
-            table.setFilter(row => {
+    }
 
-                return JSON.stringify(row)
-                    .toLowerCase()
-                    .includes(value);
 
-            });
-
-            updateStatistics();
-
-        }
-    );
+    /* -----------------------------------------
+       Team Filter
+       ----------------------------------------- */
 
     const teamFilter =
         document.getElementById(
             "team-filter"
         );
 
-    teamFilter.addEventListener(
-        "change",
-        function () {
 
-            if (!this.value) {
-                table.clearFilter(true);
-                return;
+    if (teamFilter) {
+
+        teamFilter.addEventListener(
+            "change",
+            function () {
+
+                const value =
+                    this.value;
+
+
+                if (!value) {
+
+                    table.clearFilter(true);
+
+                    if (
+                        typeof updateStatistics ===
+                        "function"
+                    ) {
+                        updateStatistics();
+                    }
+
+                    return;
+                }
+
+
+                table.setFilter(function (row) {
+
+                    const data =
+                        row.getData();
+
+
+                    const home =
+                        String(
+                            data.participantHome
+                                ?.displayName || ""
+                        );
+
+
+                    const away =
+                        String(
+                            data.participantAway
+                                ?.displayName || ""
+                        );
+
+
+                    return (
+                        home === value ||
+                        away === value
+                    );
+
+                });
+
+
+                if (
+                    typeof updateStatistics ===
+                    "function"
+                ) {
+                    updateStatistics();
+                }
+
             }
+        );
 
-            table.setFilter(function(row) {
-                return (
-                    String(row.participantHome.displayName || "")
-                        .includes(this.value) ||
-                    String(row.participantAway.displayName || "")
-                        .includes(this.value)
-                );
-            }.bind(this));
-        }
-    );
+    }
+
 }

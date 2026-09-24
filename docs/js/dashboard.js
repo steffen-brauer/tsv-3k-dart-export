@@ -14,12 +14,42 @@ window.pages.dashboard = async function() {
     container = document.getElementById("upcoming-events");
 
     container.innerHTML = nextEvents.map(event => `
-        <article>
-            <h5>${event.participantHome.displayName} vs. ${event.participantAway.displayName}</h5>
-            <p>${luxon.DateTime.fromISO(event.datePlanned)
-                .toFormat("dd.MM.yyyy HH:mm")}
-            </p>
-            </article>
+<article class="fixture">
+
+    <div class="fixture-meta">
+        <small>${event.event.name}</small>
+        <strong>${event.round.name}</strong>
+    </div>
+
+    <div class="fixture-main">
+
+        <div class="fixture-date">
+            <span class="fixture-day">
+                ${luxon.DateTime.fromISO(event.datePlanned).toFormat("dd")}
+            </span>
+            <span class="fixture-month">
+                ${luxon.DateTime.fromISO(event.datePlanned).toFormat("MMM")}
+            </span>
+            <span class="fixture-time">
+                ${luxon.DateTime.fromISO(event.datePlanned).toFormat("HH:mm")}
+            </span>
+        </div>
+
+        <div class="fixture-teams">
+            <span class="home">
+                ${event.participantHome.displayName}
+            </span>
+
+            <span class="vs">vs.</span>
+
+            <span class="away">
+                ${event.participantAway.displayName}
+            </span>
+        </div>
+
+    </div>
+
+</article>
         `).join("");
 
     console.log(nextEvents);

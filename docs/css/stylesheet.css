@@ -1,3 +1,229 @@
+:root {
+    --tsv-red: #be2828;
+    --tsv-red-hover: #d63333;
+
+    --tsv-bg: #181818;
+    --tsv-surface: #242424;
+    --tsv-surface-alt: #1c1c1c;
+    --tsv-border: #3d3d3d;
+
+    --tsv-text: #eeeeee;
+    --tsv-text-muted: #a5a5a5;
+    --nav-height: 56px;
+    /* Pico overrides */
+    --pico-background-color: var(--tsv-bg);
+    --pico-color: var(--tsv-text);
+
+    --pico-card-background-color: var(--tsv-surface);
+
+    --pico-muted-color: var(--tsv-text-muted);
+    --pico-muted-border-color: var(--tsv-border);
+
+    --pico-border-color: var(--tsv-border);
+
+    --pico-primary: var(--tsv-red);
+    --pico-primary-background: var(--tsv-red);
+    --pico-primary-border: var(--tsv-red);
+    --pico-primary-hover: var(--tsv-red-hover);
+    --pico-primary-hover-background: var(--tsv-red-hover);
+    --pico-primary-hover-border: var(--tsv-red-hover);
+
+    --pico-form-element-background-color: #202020;
+    --pico-form-element-border-color: #444;
+    --pico-form-element-color: var(--tsv-text);
+}
+
+a {
+    color: #eeeeee;
+    text-decoration: underline;
+    text-decoration-color: #be2828;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration-color: #d63333;
+}
+
+body {
+    background: var(--tsv-bg);
+    color: var(--tsv-text);
+}
+article,
+.card {
+    background: var(--tsv-surface);
+    border-color: var(--tsv-border);
+}
+
+header {
+    background: var(--tsv-surface-alt);
+    border-bottom: 1px solid var(--tsv-border);
+}
+
+footer {
+    color: var(--tsv-text-muted);
+}
+
+/* =========================================
+   Header / Navigation
+   ========================================= */
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #1c1c1c;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+header nav {
+    min-height: var(--nav-height);
+    height: var(--nav-height);
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Logo + title */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    white-space: nowrap;
+}
+
+.header-brand strong {
+    color: #eeeeee;
+    font-size: 1rem;
+}
+
+.header-logo {
+    width: auto !important;
+    height: 44px !important;
+    display: block;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+}
+
+.nav-buttons button {
+    width: auto;
+    margin: 0;
+
+    padding: 0.35rem 0.8rem;
+
+    background: transparent;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+
+    color: #d0d0d0;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.nav-buttons button:hover {
+    background: #2b2b2b;
+    border-color: #be2828;
+    color: #ffffff;
+}
+
+.nav-buttons button.active {
+    background: #be2828;
+    border-color: #be2828;
+    color: #ffffff;
+}
+
+.nav-buttons button.active:hover {
+    background: #d63333;
+    border-color: #d63333;
+}
+
+
+/* -----------------------------------------
+   Content
+   ----------------------------------------- */
+
+.content-container {
+    padding-top: 1rem;
+}
+
+
+/* -----------------------------------------
+   Loading
+   ----------------------------------------- */
+
+.page-loading {
+    text-align: center;
+
+    padding: 3rem;
+
+    color: #999;
+}
+
+
+/* -----------------------------------------
+   Footer
+   ----------------------------------------- */
+
+footer {
+    margin-top: 3rem;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    color: #888;
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .header-brand strong {
+        font-size: 0.9rem;
+    }
+
+    .header-logo {
+        height: 40px !important;
+    }
+
+    header nav {
+        gap: 0.5rem;
+    }
+
+    .nav-buttons {
+        gap: 0.35rem;
+    }
+
+    .nav-buttons button {
+        padding: 0.4rem 0.7rem;
+
+        font-size: 0.8rem;
+    }
+
+}
+
+
 .table-scroll {
     width: 100%;
     overflow-x: auto;
@@ -31,4 +257,359 @@ article > header.highlight h3, article > header.highlight h2, article > header.h
     font-weight: bold !important;
     color: #be2828 !important;
 
+}
+
+
+/* =========================================
+   Fixtures
+   ========================================= */
+
+.fixtures {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+/* -----------------------------------------
+   Card
+   ----------------------------------------- */
+
+.fixture {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    background: #242424;
+
+    border: 1px solid #3d3d3d;
+    border-left: 4px solid #be2828;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.fixture:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+/* -----------------------------------------
+   Header: Liga / Runde
+   ----------------------------------------- */
+
+.fixture-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    min-height: 42px;
+
+    padding: 0.55rem 1rem;
+
+    background: #1c1c1c;
+
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.fixture-meta small {
+    margin: 0;
+
+    color: #a5a5a5;
+
+    font-size: 0.78rem;
+    line-height: 1.2;
+}
+
+.fixture-meta strong {
+    margin: 0;
+
+    color: #be2828;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    white-space: nowrap;
+}
+
+
+/* -----------------------------------------
+   Main content
+   ----------------------------------------- */
+
+.fixture-main {
+    display: flex;
+    align-items: stretch;
+
+    min-height: 100px;
+}
+
+
+/* -----------------------------------------
+   Date
+   ----------------------------------------- */
+
+.fixture-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 90px;
+
+    padding: 0.75rem;
+
+    border-right: 1px solid #3d3d3d;
+}
+
+.fixture-day {
+    display: block;
+
+    color: #be2828;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.fixture-month {
+    display: block;
+
+    margin-top: 0.2rem;
+
+    color: #a5a5a5;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.fixture-time {
+    display: block;
+
+    margin-top: 0.55rem;
+
+    color: #d0d0d0;
+
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+
+/* -----------------------------------------
+   Teams
+   ----------------------------------------- */
+
+.fixture-teams {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 1rem;
+
+    padding: 1rem 1.25rem;
+
+    color: #eeeeee;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.fixture-teams span {
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+.fixture-teams .home {
+    text-align: right;
+}
+
+.fixture-teams .away {
+    text-align: left;
+}
+
+.fixture-teams .vs {
+    color: #be2828;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/* -----------------------------------------
+   Mobile
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .fixtures {
+        gap: 0.75rem;
+    }
+
+    .fixture-meta {
+        min-height: 38px;
+
+        padding: 0.5rem 0.75rem;
+    }
+
+    .fixture-meta small {
+        font-size: 0.7rem;
+    }
+
+    .fixture-meta strong {
+        font-size: 0.7rem;
+    }
+
+    .fixture-main {
+        min-height: 85px;
+    }
+
+    .fixture-date {
+        flex-basis: 68px;
+
+        padding: 0.5rem;
+    }
+
+    .fixture-day {
+        font-size: 1.45rem;
+    }
+
+    .fixture-month {
+        font-size: 0.65rem;
+    }
+
+    .fixture-time {
+        margin-top: 0.4rem;
+
+        font-size: 0.7rem;
+    }
+
+    .fixture-teams {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+
+        gap: 0.4rem;
+
+        padding: 0.75rem;
+
+        font-size: 0.9rem;
+    }
+
+    .fixture-teams .vs {
+        font-size: 0.6rem;
+    }
+}
+
+
+
+/* =========================================
+   Tabulator - TSV Design
+   ========================================= */
+
+#table-container {
+    width: 100%;
+}
+
+
+/* Tabelle */
+
+#table-container .tabulator {
+    background: #242424;
+
+    border: 1px solid #3d3d3d;
+    border-radius: 6px;
+
+    color: #eeeeee;
+}
+
+
+/* Header */
+
+#table-container .tabulator-header {
+    background: #1c1c1c;
+
+    border-bottom: 1px solid #3d3d3d;
+}
+
+
+#table-container .tabulator-col {
+    background: #1c1c1c;
+
+    border-right: 1px solid #3d3d3d;
+}
+
+
+#table-container .tabulator-col-title {
+    color: #d0d0d0;
+
+    font-weight: 600;
+}
+
+
+/* Rows */
+
+#table-container .tabulator-row {
+    background: #242424;
+
+    color: #eeeeee;
+
+    border-bottom: 1px solid #353535;
+}
+
+
+#table-container .tabulator-row:nth-child(even) {
+    background: #292929;
+}
+
+
+/* Hover */
+
+#table-container .tabulator-row:hover {
+    background: #303030 !important;
+}
+
+
+/* Cells */
+
+#table-container .tabulator-cell {
+    border-right: 1px solid #353535;
+}
+
+
+/* TSV Team */
+
+#table-container .tabulator-cell {
+    white-space: nowrap;
+}
+
+
+/* Pagination falls später aktiviert wird */
+
+#table-container .tabulator-footer {
+    background: #1c1c1c;
+
+    border-top: 1px solid #3d3d3d;
 }
