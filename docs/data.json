@@ -1,2108 +1,1212 @@
-{
-    "participant": {
-        "id": 173280,
-        "teamSeason": {
-            "id": 15241,
-            "season": {
-                "id": 34,
-                "name": "2026 / 2027",
-                "isDefault": true,
-                "start": "2026-07-01",
-                "end": "2027-06-30"
-            },
-            "playingVenue": {
-                "id": 728,
-                "name": "TSV Danndorf 1914 e.V.",
-                "locationCity": "Danndorf",
-                "locationPostalCode": "38461",
-                "locationStreet": "Waldstraße 26c",
-                "phone": "0179-5499662",
-                "numberOfBoards": 2,
-                "isActive": true,
-                "infoSmokers": false,
-                "infoInternet": true,
-                "infoAccessible": false,
-                "infoU18": false
-            },
-            "name": "TSV Danndorf A",
-            "rank": 1,
-            "weekdayMatch": 6,
-            "throwoffTime": "19:00:00",
-            "frontendVisible": true,
-            "note": "",
-            "matchInformation": "Team A&B Heimspiele am gleichen Spieltag möglich",
-            "machineInstallerConfirmed": false,
-            "teamMembers": [
-                {
-                    "id": 75446,
-                    "displayName": "Sascha Kordts",
-                    "member": {
-                        "id": 85829,
-                        "player": {
-                            "id": 243911,
-                            "passNr": 3143022,
-                            "displayName": "Sascha Kordts",
-                            "firstname": "Sascha",
-                            "name": "Kordts",
-                            "genderCd": "m",
-                            "firstnameLastname": "Sascha Kordts"
-                        }
-                    },
-                    "dateFrom": "2026-07-01",
-                    "dateTo": "2027-06-30",
-                    "competitionEventTypeCd": "LEAGUE",
-                    "createdCd": "SEASON_REG",
-                    "memberPlayerName": "Kordts, Sascha"
-                },
-                {
-                    "id": 75431,
-                    "displayName": "Daniel Wagner",
-                    "member": {
-                        "id": 54405,
-                        "player": {
-                            "id": 58295,
-                            "passNr": 3143009,
-                            "displayName": "Daniel Wagner",
-                            "firstname": "Daniel",
-                            "name": "Wagner",
-                            "username": "",
-                            "genderCd": "m",
-                            "firstnameLastname": "Daniel Wagner"
-                        }
-                    },
-                    "dateFrom": "2026-07-01",
-                    "dateTo": "2027-06-30",
-                    "tc1": true,
-                    "competitionEventTypeCd": "LEAGUE",
-                    "createdCd": "SEASON_REG",
-                    "memberPlayerName": "Wagner, Daniel"
-                },
-                {
-                    "id": 75416,
-                    "displayName": "Steffen Brauer",
-                    "member": {
-                        "id": 54400,
-                        "player": {
-                            "id": 58290,
-                            "passNr": 3143004,
-                            "displayName": "Steffen Brauer",
-                            "firstname": "Steffen",
-                            "name": "Brauer",
-                            "username": "",
-                            "genderCd": "m",
-                            "firstnameLastname": "Steffen Brauer"
-                        }
-                    },
-                    "dateFrom": "2026-07-01",
-                    "dateTo": "2027-06-30",
-                    "competitionEventTypeCd": "LEAGUE",
-                    "createdCd": "SEASON_REG",
-                    "memberPlayerName": "Brauer, Steffen"
-                },
-                {
-                    "id": 75425,
-                    "displayName": "Fernando Nolte",
-                    "member": {
-                        "id": 63922,
-                        "player": {
-                            "id": 86121,
-                            "passNr": 3143021,
-                            "displayName": "Fernando Nolte",
-                            "firstname": "Fernando",
-                            "name": "Nolte",
-                            "genderCd": "m",
-                            "firstnameLastname": "Fernando Nolte"
-                        }
-                    },
-                    "dateFrom": "2026-07-01",
-                    "dateTo": "2027-06-30",
-                    "competitionEventTypeCd": "LEAGUE",
-                    "createdCd": "SEASON_REG",
-                    "memberPlayerName": "Nolte, Fernando"
-                }
-            ],
-            "competitionChampionship": true
+[
+    {
+        "id": 1335981,
+        "participantHome": {
+            "id": 173279,
+            "displayName": "DC Iron Oaks Saalsdorf B"
         },
-        "displayName": "TSV Danndorf A",
-        "currentPosition": "",
-        "paid": false,
-        "present": true,
-        "deregistered": false,
-        "retired": false,
-        "rankingPos": 6
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35138,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-19T18:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "3:9 (15:30)"
     },
-    "matches": [
-        {
-            "id": 1336003,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35142,
-                "name": "Spieltag 7",
-                "index": 6,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35142,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_7",
-                "dateFrom": "2026-11-05T23:00:00.000+0000",
-                "dateTo": "2026-11-07T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173275,
-                "displayName": "VfL Wolfsburg e.V. C",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 10
-            },
-            "gameNr": 34,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336003,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-11-07T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+    {
+        "id": 1336058,
+        "participantHome": {
+            "id": 173270,
+            "displayName": "TSV Neindorf A"
         },
-        {
-            "id": 1336019,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35145,
-                "name": "Spieltag 10",
-                "index": 9,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35145,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_10",
-                "dateFrom": "2027-01-07T23:00:00.000+0000",
-                "dateTo": "2027-01-09T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173274,
-                "displayName": "Mad House Fallersleben B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 9
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 50,
-            "gameNrRound": 5,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336019,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-01-09T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
         },
-        {
-            "id": 1335977,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35137,
-                "name": "Spieltag 2",
-                "index": 1,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35137,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_2",
-                "dateFrom": "2026-08-27T22:00:00.000+0000",
-                "dateTo": "2026-08-29T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173267,
-                "displayName": "DC Old No.7 Sülfeld A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 7
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 8,
-            "gameNrRound": 3,
-            "statusCd": "FINISH",
-            "approveStatusCd": "APPROVED",
-            "setsHome": 3,
-            "setsAway": 9,
-            "legsHome": 14,
-            "legsAway": 31,
-            "matchmode": {
-                "id": 1335977,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": true,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "endDate": "2026-08-29T20:41:13",
-            "datePlanned": "2026-08-29T16:30:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
         },
-        {
-            "id": 1335996,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35141,
-                "name": "Spieltag 6",
-                "index": 5,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35141,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_6",
-                "dateFrom": "2026-10-22T22:00:00.000+0000",
-                "dateTo": "2026-10-24T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173273,
-                "displayName": "DC Eilenstedt Gladiators B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 8
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 27,
-            "gameNrRound": 2,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1335996,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-11-13T19:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false,
-            "reschedule": true
+        "round": {
+            "id": 35153,
+            "name": "Spieltag 18"
         },
-        {
-            "id": 1336023,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35146,
-                "name": "Spieltag 11",
-                "index": 10,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35146,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_11",
-                "dateFrom": "2027-01-21T23:00:00.000+0000",
-                "dateTo": "2027-01-23T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173267,
-                "displayName": "DC Old No.7 Sülfeld A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 7
-            },
-            "gameNr": 54,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336023,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-01-23T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "datePlanned": "2027-05-08T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335973,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
         },
-        {
-            "id": 1336037,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35149,
-                "name": "Spieltag 14",
-                "index": 13,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35149,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_14",
-                "dateFrom": "2027-03-04T23:00:00.000+0000",
-                "dateTo": "2027-03-06T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173269,
-                "displayName": "SV Büddenstedt Darts A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 2
-            },
-            "gameNr": 68,
-            "gameNrRound": 3,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336037,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-03-06T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "participantAway": {
+            "id": 173274,
+            "displayName": "Mad House Fallersleben B"
         },
-        {
-            "id": 1336013,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35144,
-                "name": "Spieltag 9",
-                "index": 8,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35144,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_9",
-                "dateFrom": "2026-12-10T23:00:00.000+0000",
-                "dateTo": "2026-12-12T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173270,
-                "displayName": "TSV Neindorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 4
-            },
-            "gameNr": 44,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336013,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-12-12T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
         },
-        {
-            "id": 1335988,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35139,
-                "name": "Spieltag 4",
-                "index": 3,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35139,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_4",
-                "dateFrom": "2026-09-24T22:00:00.000+0000",
-                "dateTo": "2026-09-26T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173282,
-                "displayName": "DC Tops Tappenbeck A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 5
-            },
-            "gameNr": 19,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1335988,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-09-24T17:30:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false,
-            "reschedule": true
+        "round": {
+            "id": 35136,
+            "name": "Spieltag 1"
         },
-        {
-            "id": 1336043,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35150,
-                "name": "Spieltag 15",
-                "index": 14,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35150,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_15",
-                "dateFrom": "2027-03-18T23:00:00.000+0000",
-                "dateTo": "2027-03-20T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173273,
-                "displayName": "DC Eilenstedt Gladiators B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 8
-            },
-            "gameNr": 74,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336043,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-03-20T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "datePlanned": "2026-08-22T18:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "8:4 (26:15)"
+    },
+    {
+        "id": 1336003,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
         },
-        {
-            "id": 1335981,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35138,
-                "name": "Spieltag 3",
-                "index": 2,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35138,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_3",
-                "dateFrom": "2026-09-10T22:00:00.000+0000",
-                "dateTo": "2026-09-12T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173279,
-                "displayName": "DC Iron Oaks Saalsdorf B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 3
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 12,
-            "gameNrRound": 2,
-            "statusCd": "FINISH",
-            "approveStatusCd": "APPROVED",
-            "setsHome": 3,
-            "setsAway": 9,
-            "legsHome": 15,
-            "legsAway": 30,
-            "matchmode": {
-                "id": 1335981,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": true,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "endDate": "2026-09-19T22:34:01",
-            "datePlanned": "2026-09-19T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false,
-            "reschedule": true
+        "participantAway": {
+            "id": 173275,
+            "displayName": "VfL Wolfsburg e.V. C"
         },
-        {
-            "id": 1336028,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35147,
-                "name": "Spieltag 12",
-                "index": 11,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35147,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_12",
-                "dateFrom": "2027-02-04T23:00:00.000+0000",
-                "dateTo": "2027-02-06T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173279,
-                "displayName": "DC Iron Oaks Saalsdorf B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 3
-            },
-            "gameNr": 59,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336028,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-02-06T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
         },
-        {
-            "id": 1336008,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35143,
-                "name": "Spieltag 8",
-                "index": 7,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35143,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_8",
-                "dateFrom": "2026-11-26T23:00:00.000+0000",
-                "dateTo": "2026-11-28T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173277,
-                "displayName": "Bad Bulls Schandelah A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 1
-            },
-            "gameNr": 39,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336008,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-11-28T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "round": {
+            "id": 35142,
+            "name": "Spieltag 7"
         },
-        {
-            "id": 1336048,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35151,
-                "name": "Spieltag 16",
-                "index": 15,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35151,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_16",
-                "dateFrom": "2027-04-01T22:00:00.000+0000",
-                "dateTo": "2027-04-03T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173275,
-                "displayName": "VfL Wolfsburg e.V. C",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 10
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 79,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336048,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-04-03T17:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "datePlanned": "2026-11-07T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336043,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
         },
-        {
-            "id": 1336030,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35148,
-                "name": "Spieltag 13",
-                "index": 12,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35148,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_13",
-                "dateFrom": "2027-02-18T23:00:00.000+0000",
-                "dateTo": "2027-02-20T23:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173282,
-                "displayName": "DC Tops Tappenbeck A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 5
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 61,
-            "gameNrRound": 1,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336030,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-02-19T17:30:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "participantAway": {
+            "id": 173273,
+            "displayName": "DC Eilenstedt Gladiators B"
         },
-        {
-            "id": 1336054,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35152,
-                "name": "Spieltag 17",
-                "index": 16,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35152,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_17",
-                "dateFrom": "2027-04-22T22:00:00.000+0000",
-                "dateTo": "2027-04-24T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173277,
-                "displayName": "Bad Bulls Schandelah A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 1
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 85,
-            "gameNrRound": 5,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336054,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-04-24T17:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
         },
-        {
-            "id": 1336058,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35153,
-                "name": "Spieltag 18",
-                "index": 17,
-                "typeCd": "GROUP",
-                "groupCd": "SECOND_HALF",
-                "matchmode": {
-                    "id": 35153,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_18",
-                "dateFrom": "2027-05-06T22:00:00.000+0000",
-                "dateTo": "2027-05-08T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173270,
-                "displayName": "TSV Neindorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 4
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 89,
-            "gameNrRound": 4,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1336058,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2027-05-08T17:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
+        "round": {
+            "id": 35150,
+            "name": "Spieltag 15"
         },
-        {
-            "id": 1335973,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35136,
-                "name": "Spieltag 1",
-                "index": 0,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35136,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_1",
-                "dateFrom": "2026-08-20T22:00:00.000+0000",
-                "dateTo": "2026-08-22T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "participantGuest": {
-                "id": 173274,
-                "displayName": "Mad House Fallersleben B",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 9
-            },
-            "gameNr": 4,
-            "gameNrRound": 4,
-            "statusCd": "FINISH",
-            "approveStatusCd": "APPROVED",
-            "setsHome": 8,
-            "setsAway": 4,
-            "legsHome": 26,
-            "legsAway": 15,
-            "matchmode": {
-                "id": 1335973,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": true,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "endDate": "2026-08-22T22:14:42",
-            "datePlanned": "2026-08-22T18:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false,
-            "reschedule": true
+        "datePlanned": "2027-03-20T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336048,
+        "participantHome": {
+            "id": 173275,
+            "displayName": "VfL Wolfsburg e.V. C"
         },
-        {
-            "id": 1335991,
-            "eventId": 1324,
-            "event": {
-                "id": 1324,
-                "datetime": "2026-06-30T22:00:00.000+0000",
-                "eventTypeCd": "LEAGUE",
-                "statusCd": "ACTIVE",
-                "dartTypeCd": "steeldart",
-                "name": "Kreisliga 08",
-                "nameShort": "KL 08",
-                "hasPerformancesDefined": true,
-                "leagueLock": true,
-                "hideDataLeagueSetup": false,
-                "leagueOrLeagueTypeCd": true
-            },
-            "round": {
-                "id": 35140,
-                "name": "Spieltag 5",
-                "index": 4,
-                "typeCd": "GROUP",
-                "groupCd": "FIRST_HALF",
-                "matchmode": {
-                    "id": 35140,
-                    "matchmodeCd": "X01",
-                    "matchmodeInCd": "Straight-In",
-                    "matchmodeOutCd": "Double-Out",
-                    "matchmodePoints": 501,
-                    "setsBestOf": 1,
-                    "setsTotal": -1,
-                    "legsBestOf": 5,
-                    "legsTotal": -1,
-                    "bullShootTimeCd": "begin",
-                    "bullShootModeCd": "distance",
-                    "doubleModeCd": ""
-                },
-                "nameCd": "GAMEDAY_5",
-                "dateFrom": "2026-10-08T22:00:00.000+0000",
-                "dateTo": "2026-10-10T22:00:00.000+0000",
-                "waitForLastRound": false,
-                "level": 0
-            },
-            "phase": {
-                "id": 1995,
-                "index": 1,
-                "name": "Liga",
-                "statusCd": "ACTIVE",
-                "modeCd": "league",
-                "typeCd": "M",
-                "writerCd": "NONE",
-                "setEquation": true,
-                "lastUpdate": "2026-06-11T20:31:00",
-                "created": "2026-06-11T20:31:00",
-                "templateId": 429,
-                "matchReportMemberSourceCd": "TEAM_LOWER",
-                "setInputTypeCd": "TOTAL",
-                "lineupCd": "NONE",
-                "lineupReservePlayer": 2,
-                "matchApproval": true,
-                "substituteAgain": true
-            },
-            "participantHome": {
-                "id": 173269,
-                "displayName": "SV Büddenstedt Darts A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 2
-            },
-            "participantGuest": {
-                "id": 173280,
-                "displayName": "TSV Danndorf A",
-                "currentPosition": "",
-                "paid": false,
-                "present": true,
-                "deregistered": false,
-                "retired": false,
-                "rankingPos": 6
-            },
-            "gameNr": 22,
-            "gameNrRound": 2,
-            "statusCd": "OPEN",
-            "matchmode": {
-                "id": 1335991,
-                "matchmodeCd": "X01",
-                "matchmodeInCd": "Straight-In",
-                "matchmodeOutCd": "Double-Out",
-                "matchmodePoints": 501,
-                "setsBestOf": 1,
-                "setsTotal": -1,
-                "legsBestOf": 5,
-                "legsTotal": -1,
-                "bullShootTimeCd": "begin",
-                "bullShootModeCd": "distance",
-                "doubleModeCd": ""
-            },
-            "hasPerformances": false,
-            "active": true,
-            "byeHome": false,
-            "byeAway": false,
-            "datePlanned": "2026-10-10T14:00:00.000+0000",
-            "matchReport": true,
-            "level": 0,
-            "ready": false,
-            "prioritize": false
-        }
-    ],
-    "participantIds": [
-        173280
-    ],
-    "calenderActive": false,
-    "showMemberStatusActive": false,
-    "validCheckSeasonEndDate": "2027-06-30"
-}
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35151,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-03T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336013,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173270,
+            "displayName": "TSV Neindorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35144,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-12T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336054,
+        "participantHome": {
+            "id": 173277,
+            "displayName": "Bad Bulls Schandelah A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35152,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336037,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173269,
+            "displayName": "SV B\u00fcddenstedt Darts A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35149,
+            "name": "Spieltag 14"
+        },
+        "datePlanned": "2027-03-06T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336023,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173267,
+            "displayName": "DC Old No.7 S\u00fclfeld A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35146,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-23T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335996,
+        "participantHome": {
+            "id": 173273,
+            "displayName": "DC Eilenstedt Gladiators B"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35141,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-11-13T19:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336008,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173277,
+            "displayName": "Bad Bulls Schandelah A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35143,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336030,
+        "participantHome": {
+            "id": 173282,
+            "displayName": "DC Tops Tappenbeck A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35148,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-19T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336019,
+        "participantHome": {
+            "id": 173274,
+            "displayName": "Mad House Fallersleben B"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35145,
+            "name": "Spieltag 10"
+        },
+        "datePlanned": "2027-01-09T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335977,
+        "participantHome": {
+            "id": 173267,
+            "displayName": "DC Old No.7 S\u00fclfeld A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35137,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-08-29T16:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "3:9 (14:31)"
+    },
+    {
+        "id": 1335988,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173282,
+            "displayName": "DC Tops Tappenbeck A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35139,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-09-24T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1335991,
+        "participantHome": {
+            "id": 173269,
+            "displayName": "SV B\u00fcddenstedt Darts A"
+        },
+        "participantAway": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35140,
+            "name": "Spieltag 5"
+        },
+        "datePlanned": "2026-10-10T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1336028,
+        "participantHome": {
+            "id": 173280,
+            "displayName": "TSV Danndorf A"
+        },
+        "participantAway": {
+            "id": 173279,
+            "displayName": "DC Iron Oaks Saalsdorf B"
+        },
+        "event": {
+            "id": 1324,
+            "name": "Kreisliga 08"
+        },
+        "round": {
+            "id": 35147,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365292,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173388,
+            "displayName": "DC Eilenstedt Gladiators E"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35600,
+            "name": "Spieltag 15"
+        },
+        "datePlanned": "2027-03-20T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365251,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173380,
+            "displayName": "Flightclub Velpke C"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35592,
+            "name": "Spieltag 7"
+        },
+        "datePlanned": "2026-11-07T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365283,
+        "participantHome": {
+            "id": 173386,
+            "displayName": "Werner\u00b4s DC Helmstedt C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35598,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-20T14:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365295,
+        "participantHome": {
+            "id": 173380,
+            "displayName": "Flightclub Velpke C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35601,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-02T16:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365267,
+        "participantHome": {
+            "id": 173391,
+            "displayName": "VfL Wolfsburg e.V. I"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35595,
+            "name": "Spieltag 10"
+        },
+        "datePlanned": "2027-01-09T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365257,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173378,
+            "displayName": "SV Brunsrode A"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35593,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365308,
+        "participantHome": {
+            "id": 173390,
+            "displayName": "Steffi\u00b4s Dart Meile A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35603,
+            "name": "Spieltag 18"
+        },
+        "datePlanned": "2027-05-08T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365271,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173383,
+            "displayName": "Lutterwoelfe C"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35596,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-23T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365248,
+        "participantHome": {
+            "id": 173388,
+            "displayName": "DC Eilenstedt Gladiators E"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35591,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-10-24T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365263,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173390,
+            "displayName": "Steffi\u00b4s Dart Meile A"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35594,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-12T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365231,
+        "participantHome": {
+            "id": 173392,
+            "displayName": "Steel Dart Society S\u00fcpplingen A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35588,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-18T16:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "4:8 (20:28)"
+    },
+    {
+        "id": 1365236,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173386,
+            "displayName": "Werner\u00b4s DC Helmstedt C"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35589,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-10-03T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365276,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173392,
+            "displayName": "Steel Dart Society S\u00fcpplingen A"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35597,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1365222,
+        "participantHome": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "participantAway": {
+            "id": 173391,
+            "displayName": "VfL Wolfsburg e.V. I"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35586,
+            "name": "Spieltag 1"
+        },
+        "datePlanned": "2026-08-22T15:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "12:0 (36:8)"
+    },
+    {
+        "id": 1365225,
+        "participantHome": {
+            "id": 173383,
+            "displayName": "Lutterwoelfe C"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35587,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-08-28T16:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "2:10 (13:34)"
+    },
+    {
+        "id": 1365301,
+        "participantHome": {
+            "id": 173378,
+            "displayName": "SV Brunsrode A"
+        },
+        "participantAway": {
+            "id": 173376,
+            "displayName": "TSV Danndorf B"
+        },
+        "event": {
+            "id": 1344,
+            "name": "2. Kreisklasse 08"
+        },
+        "round": {
+            "id": 35602,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T13:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354743,
+        "participantHome": {
+            "id": 173530,
+            "displayName": "Blue Bulls Flechtorf B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35434,
+            "name": "Spieltag 11"
+        },
+        "datePlanned": "2027-01-24T16:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354711,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173529,
+            "displayName": "Dartattack Meinersen A"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35428,
+            "name": "Spieltag 5"
+        },
+        "datePlanned": "2026-10-10T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354777,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173526,
+            "displayName": "SteelBees K\u00e4storf A"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35441,
+            "name": "Spieltag 18"
+        },
+        "datePlanned": "2027-05-08T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354746,
+        "participantHome": {
+            "id": 173523,
+            "displayName": "Black Bulls Hoitlinger SV B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35435,
+            "name": "Spieltag 12"
+        },
+        "datePlanned": "2027-02-06T17:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354730,
+        "participantHome": {
+            "id": 173526,
+            "displayName": "SteelBees K\u00e4storf A"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35432,
+            "name": "Spieltag 9"
+        },
+        "datePlanned": "2026-12-11T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354725,
+        "participantHome": {
+            "id": 173524,
+            "displayName": "Green Panthers Wagenhoff B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35431,
+            "name": "Spieltag 8"
+        },
+        "datePlanned": "2026-11-28T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354751,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173521,
+            "displayName": "DC Shamrock C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35436,
+            "name": "Spieltag 13"
+        },
+        "datePlanned": "2027-02-20T16:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354757,
+        "participantHome": {
+            "id": 173529,
+            "displayName": "Dartattack Meinersen A"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35437,
+            "name": "Spieltag 14"
+        },
+        "datePlanned": "2027-03-07T15:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354762,
+        "participantHome": {
+            "id": 173520,
+            "displayName": "VfL Wolfsburg e.V. H"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35438,
+            "name": "Spieltag 15"
+        },
+        "datePlanned": "2027-03-20T18:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354767,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173527,
+            "displayName": "SV Brunsrode B"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35439,
+            "name": "Spieltag 16"
+        },
+        "datePlanned": "2027-04-03T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354716,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173520,
+            "displayName": "VfL Wolfsburg e.V. H"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35429,
+            "name": "Spieltag 6"
+        },
+        "datePlanned": "2026-10-24T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354707,
+        "participantHome": {
+            "id": 173521,
+            "displayName": "DC Shamrock C"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35427,
+            "name": "Spieltag 4"
+        },
+        "datePlanned": "2026-09-26T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354720,
+        "participantHome": {
+            "id": 173527,
+            "displayName": "SV Brunsrode B"
+        },
+        "participantAway": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35430,
+            "name": "Spieltag 7"
+        },
+        "datePlanned": "2026-11-07T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354771,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173524,
+            "displayName": "Green Panthers Wagenhoff B"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35440,
+            "name": "Spieltag 17"
+        },
+        "datePlanned": "2027-04-24T15:30:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1354702,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173523,
+            "displayName": "Black Bulls Hoitlinger SV B"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35426,
+            "name": "Spieltag 3"
+        },
+        "datePlanned": "2026-09-12T15:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "9:3 (28:14)"
+    },
+    {
+        "id": 1354697,
+        "participantHome": {
+            "id": 173531,
+            "displayName": "TSV Danndorf C"
+        },
+        "participantAway": {
+            "id": 173530,
+            "displayName": "Blue Bulls Flechtorf B"
+        },
+        "event": {
+            "id": 1478,
+            "name": "2. Kreisklasse 17"
+        },
+        "round": {
+            "id": 35425,
+            "name": "Spieltag 2"
+        },
+        "datePlanned": "2026-09-04T16:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "6:6 (22:26)"
+    },
+    {
+        "id": 1590659,
+        "participantHome": {
+            "id": 176507,
+            "displayName": "TSV Danndorf 1"
+        },
+        "participantAway": {
+            "id": 176493,
+            "displayName": "SVG G\u00f6ttingen 2"
+        },
+        "event": {
+            "id": 1777,
+            "name": "BBDV Bezirkspokal"
+        },
+        "round": {
+            "id": 38586,
+            "name": "Letzte 256"
+        },
+        "datePlanned": "2026-09-19T12:00:00.000+00:00",
+        "status": "FINISH",
+        "result": "7:6 (26:27)"
+    },
+    {
+        "id": 1590775,
+        "participantHome": {
+            "id": 176507,
+            "displayName": "TSV Danndorf 1"
+        },
+        "participantAway": {
+            "id": 176367,
+            "displayName": "DC Dragons Wolfenb\u00fcttel 2"
+        },
+        "event": {
+            "id": 1777,
+            "name": "BBDV Bezirkspokal"
+        },
+        "round": {
+            "id": 38587,
+            "name": "Letzte 128"
+        },
+        "datePlanned": "2026-10-17T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1590764,
+        "participantHome": {
+            "id": 176513,
+            "displayName": "TSV Rethen 2"
+        },
+        "participantAway": {
+            "id": 176508,
+            "displayName": "TSV Danndorf 2"
+        },
+        "event": {
+            "id": 1777,
+            "name": "BBDV Bezirkspokal"
+        },
+        "round": {
+            "id": 38587,
+            "name": "Letzte 128"
+        },
+        "datePlanned": "2026-10-17T14:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    },
+    {
+        "id": 1590696,
+        "participantHome": {
+            "id": 176509,
+            "displayName": "TSV Danndorf 3"
+        },
+        "participantAway": {
+            "id": 176445,
+            "displayName": "M-Town Cowboys 1"
+        },
+        "event": {
+            "id": 1777,
+            "name": "BBDV Bezirkspokal"
+        },
+        "round": {
+            "id": 38586,
+            "name": "Letzte 256"
+        },
+        "datePlanned": "2026-09-19T15:30:00.000+00:00",
+        "status": "FINISH",
+        "result": "5:7 (23:26)"
+    },
+    {
+        "id": 1391942,
+        "participantHome": {
+            "id": 174443,
+            "displayName": "TuS L\u00fchnde e.V. I (8er)"
+        },
+        "participantAway": {
+            "id": 174487,
+            "displayName": "TSV Danndorf I (8er)"
+        },
+        "event": {
+            "id": 1710,
+            "name": "NDV 8er Pokal"
+        },
+        "round": {
+            "id": 36031,
+            "name": "Letzte 64"
+        },
+        "datePlanned": "2026-10-01T17:00:00.000+00:00",
+        "status": "OPEN",
+        "result": "-"
+    }
+]
