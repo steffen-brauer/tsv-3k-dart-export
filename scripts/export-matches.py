@@ -1,6 +1,6 @@
 import requests
 import json
-from datetime import datetime, timezone
+from datetime import datetime
 urls = [
     "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173280",
     "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173376",
@@ -9,9 +9,7 @@ urls = [
     "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176508",
     "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176509",
     "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/174487"
-
 ]
-
 
 matches = []
 
@@ -32,7 +30,6 @@ def format_date(date_str):
 
 # extract relevant fields from matches
 for match in matches:
-    print(json.dumps(match, indent=4))
     
     if match.get("participantHome") is None or match.get("participantGuest") is None:
         # spielfrei, skip this match
@@ -67,10 +64,5 @@ for match in matches:
 
     
     matches_filtered.append(match_filtered)
-
-
-
-
-
 
 json.dump(matches_filtered, open("matches.json", "w"), indent=4)
