@@ -28,6 +28,7 @@ jobs:
       - name: Update JSON
         run: |
           python scripts/export-matches.py
+          cp scripts/matches.json docs/data.json
 
       - name: Commit changes
         run: |
