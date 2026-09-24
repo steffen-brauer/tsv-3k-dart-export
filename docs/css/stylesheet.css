@@ -71,37 +71,25 @@ footer {
    ========================================= */
 
 /* Header */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: #1c1c1c;
-    border-bottom: 1px solid #3d3d3d;
-}
-
 header nav {
     min-height: var(--nav-height);
-    height: var(--nav-height);
-
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    gap: 1rem;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-/* Logo + title */
+header nav > ul {
+    margin: 0;
+}
+
 .header-brand {
     display: flex;
     align-items: center;
     gap: 0.6rem;
     white-space: nowrap;
-}
-
-.header-brand strong {
-    color: #eeeeee;
-    font-size: 1rem;
 }
 
 .header-logo {
@@ -110,7 +98,11 @@ header nav {
     display: block;
 }
 
-/* Navigation buttons */
+.header-brand strong {
+    color: #eeeeee;
+    font-size: 1rem;
+}
+
 .nav-buttons {
     display: flex;
     align-items: center;
@@ -121,21 +113,7 @@ header nav {
 .nav-buttons button {
     width: auto;
     margin: 0;
-
     padding: 0.35rem 0.8rem;
-
-    background: transparent;
-    border: 1px solid #4a4a4a;
-    border-radius: 5px;
-
-    color: #d0d0d0;
-    font-size: 0.85rem;
-    font-weight: 600;
-
-    transition:
-        background-color 0.15s ease,
-        border-color 0.15s ease,
-        color 0.15s ease;
 }
 
 .nav-buttons button:hover {
@@ -196,31 +174,34 @@ footer {
 /* =========================================
    Mobile
    ========================================= */
-
-@media (max-width: 768px) {
-
-    .header-brand strong {
-        font-size: 0.9rem;
-    }
-
-    .header-logo {
-        height: 40px !important;
-    }
-
+@media (max-width: 600px) {
     header nav {
-        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .header-brand {
+        flex: 1 1 100%;
     }
 
     .nav-buttons {
-        gap: 0.35rem;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    header nav {
+        flex-wrap: wrap;
     }
 
-    .nav-buttons button {
-        padding: 0.4rem 0.7rem;
-
-        font-size: 0.8rem;
+    .header-brand {
+        flex: 1 1 100%;
     }
 
+    .nav-buttons {
+        flex: 0 0 100%;
+        justify-content: center;
+    }
 }
 
 

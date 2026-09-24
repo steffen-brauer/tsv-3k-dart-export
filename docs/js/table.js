@@ -219,16 +219,13 @@ function resultFormatter(cell) {
    ============================================= */
 
 function quickFilter(value, columns) {
-
+    console.log("quickFilter", value, columns);
     if (!table) {
         return;
     }
 
-
     if (!value) {
-
         table.clearFilter();
-
         return;
     }
 
@@ -236,15 +233,11 @@ function quickFilter(value, columns) {
     const searchValue =
         value.toUpperCase();
 
-
     table.setFilter(function (row) {
-
         const data =
-            row.getData();
-
+            row;
 
         return columns.some(col => {
-
             return String(
                 data[col] || ""
             )
@@ -305,7 +298,7 @@ function registerFilters() {
                 table.setFilter(function (row) {
 
                     return JSON.stringify(
-                        row.getData()
+                        row
                     )
                         .toLowerCase()
                         .includes(value);
@@ -364,7 +357,7 @@ function registerFilters() {
                 table.setFilter(function (row) {
 
                     const data =
-                        row.getData();
+                        row;
 
 
                     const home =
