@@ -2,13 +2,13 @@ import requests
 import json
 from datetime import datetime
 urls = [
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173280",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173376",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173531",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176507",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176508",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176509",
-    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/174487"
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173280", # A
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173376", # B
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/173531", # C
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176507", # 1 (Pokal)
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176508", # 2 (Pokal)
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/176509", # 3 (Pokal)
+    "https://backend-ddv.3k-darts.com/2k-backend-ddv/api/v1/frontend/participant/174487" # NDV 8er
 ]
 
 matches = []
