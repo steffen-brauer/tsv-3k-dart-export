@@ -105,20 +105,7 @@ window.pages.table = async function () {
                 },
 
 
-                {
-                    title: "Event",
-                    field: "event.name",
 
-                    resizable: false
-                },
-
-
-                {
-                    title: "Runde",
-                    field: "round.name",
-
-                    resizable: false
-                },
 
 
                 {
@@ -151,6 +138,19 @@ window.pages.table = async function () {
 
                     formatter:
                         conditionalTextColor
+                },                {
+                    title: "Event",
+                    field: "event.name",
+
+                    resizable: false
+                },
+
+
+                {
+                    title: "Runde",
+                    field: "round.name",
+
+                    resizable: false
                 }
 
             ]
