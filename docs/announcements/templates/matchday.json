@@ -1,0 +1,278 @@
+{
+    "name": "Spielankündigung",
+    "width": 1080,
+    "height": 1350,
+
+    "background": "assets/background.png",
+
+    "fonts": {
+        "display": "Sedgwick Ave Display",
+        "condensed": "Bebas Neue",
+        "handwriting": "Permanent Marker"
+    },
+
+    "fields": [
+        {
+            "id": "matchday",
+            "label": "Spieltag",
+            "type": "text",
+            "default": "1. SPIELTAG"
+        },
+        {
+            "id": "matchType",
+            "label": "Spieltyp",
+            "type": "text",
+            "default": "HEIMSPIELTAG"
+        },
+        {
+            "id": "weekday",
+            "label": "Wochentag",
+            "type": "text",
+            "default": "SAMSTAG"
+        },
+        {
+            "id": "date",
+            "label": "Datum",
+            "type": "text",
+            "default": "22.08.2026"
+        },
+        {
+            "id": "time",
+            "label": "Anwurf",
+            "type": "text",
+            "default": "17:00"
+        },
+        {
+            "id": "homeTeam",
+            "label": "Heimteam",
+            "type": "text",
+            "default": "TSV DANNDORF"
+        },
+        {
+            "id": "homeLogo",
+            "label": "Heimlogo",
+            "type": "url",
+            "default": "assets/tsv-logo.png"
+        },
+        {
+            "id": "awayTeam",
+            "label": "Gastteam",
+            "type": "text",
+            "default": "VfL WOLFSBURG"
+        },
+        {
+            "id": "awayLogo",
+            "label": "Gastlogo",
+            "type": "url"
+        },
+        {
+            "id": "venue",
+            "label": "Spielort",
+            "type": "text",
+            "default": "DANNDORF IM WALDSTADION"
+        }
+    ],
+
+    "elements": [
+
+        {
+            "id": "clubName",
+            "type": "text",
+            "value": "TSV DANNDORF DARTS",
+
+            "x": 100,
+            "y": 45,
+            "width": 880,
+
+            "font": "condensed",
+            "fontSize": 34,
+            "fontWeight": 400,
+            "letterSpacing": 11,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "matchday",
+            "type": "text",
+            "value": "{{matchday}}",
+
+            "x": 40,
+            "y": 105,
+            "width": 1000,
+
+            "font": "handwriting",
+            "fontSize": 130,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "matchType",
+            "type": "text",
+            "value": "{{matchType}}",
+
+            "x": 240,
+            "y": 265,
+            "width": 600,
+
+            "font": "condensed",
+            "fontSize": 42,
+            "fontWeight": 700,
+            "letterSpacing": 8,
+
+            "color": "#000000",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "weekday",
+            "type": "text",
+            "value": "{{weekday}}",
+
+            "x": 200,
+            "y": 360,
+            "width": 680,
+
+            "font": "condensed",
+            "fontSize": 32,
+            "letterSpacing": 9,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "date",
+            "type": "text",
+            "value": "{{date}}",
+
+            "x": 100,
+            "y": 395,
+            "width": 880,
+
+            "font": "condensed",
+            "fontSize": 62,
+            "fontWeight": 700,
+            "letterSpacing": 3,
+
+            "color": "#E30613",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "time",
+            "type": "text",
+            "value": "ANWURF {{time}} UHR",
+
+            "x": 200,
+            "y": 465,
+            "width": 680,
+
+            "font": "condensed",
+            "fontSize": 28,
+            "letterSpacing": 7,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        },
+
+        {
+            "id": "homeLogo",
+            "type": "image",
+            "value": "{{homeLogo}}",
+
+            "x": 90,
+            "y": 555,
+            "width": 330,
+            "height": 330
+        },
+
+        {
+            "id": "awayLogo",
+            "type": "image",
+            "value": "{{awayLogo}}",
+
+            "x": 660,
+            "y": 555,
+            "width": 330,
+            "height": 330
+        },
+
+        {
+            "id": "homeTeam",
+            "type": "brushText",
+            "value": "{{homeTeam}}",
+
+            "x": 40,
+            "y": 900,
+            "width": 450,
+
+            "font": "condensed",
+            "fontSize": 40,
+            "fontWeight": 700,
+
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "brush": {
+                "color": "#E30613",
+                "rotation": -1
+            }
+        },
+
+        {
+            "id": "awayTeam",
+            "type": "brushText",
+            "value": "{{awayTeam}}",
+
+            "x": 590,
+            "y": 900,
+            "width": 450,
+
+            "font": "condensed",
+            "fontSize": 40,
+            "fontWeight": 700,
+
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "brush": {
+                "color": "#E30613",
+                "rotation": -1
+            }
+        },
+        {
+            "id": "versus",
+            "type": "text",
+            "value": "VS.",
+
+            "x": 430,
+            "y": 665,
+            "width": 220,
+
+            "font": "display",
+            "fontSize": 100,
+            "fontWeight": 400,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        },
+        {
+            "id": "venue",
+            "type": "text",
+            "value": "{{venue}}",
+
+            "x": 150,
+            "y": 1210,
+            "width": 780,
+
+            "font": "condensed",
+            "fontSize": 28,
+            "letterSpacing": 8,
+
+            "color": "#FFFFFF",
+            "textAlign": "center"
+        }
+    ]
+}

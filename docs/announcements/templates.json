@@ -1,0 +1,19 @@
+{
+  "templates": [
+    {
+      "id": "spielankuendigung",
+      "name": "Spielankündigung",
+      "file": "templates/matchday.json"
+    },
+    {
+      "id": "ergebnis",
+      "name": "Spielergebnis",
+      "file": "templates/ergebnis.json"
+    },
+    {
+      "id": "spieltag",
+      "name": "Spieltag Übersicht",
+      "file": "templates/spieltag.json"
+    }
+  ]
+}

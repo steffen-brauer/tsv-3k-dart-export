@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedgwick+Ave+Display&family=Permanent+Marker&display=swap"
+    rel="stylesheet"
+>
+<title>TSV Social Media Generator</title>
+
+<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.js"></script>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #222;
+        color: #fff;
+    }
+
+    .app {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    /* --------------------------------------------------
+       Editor
+    -------------------------------------------------- */
+
+    .editor {
+        width: 360px;
+        padding: 24px;
+        background: #181818;
+        border-right: 1px solid #444;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .field {
+        margin-bottom: 18px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background: #292929;
+        color: white;
+        font-size: 15px;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #e30613;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border: 0;
+        border-radius: 5px;
+        background: #e30613;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #c90510;
+    }
+
+    .status {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #aaa;
+    }
+
+    /* --------------------------------------------------
+       Preview
+    -------------------------------------------------- */
+
+    .preview-area {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    /*
+     * Das eigentliche Social-Media-Bild.
+     *
+     * Es wird immer mit exakt 1080 x 1350 px gerendert.
+     */
+    #canvas {
+        position: relative;
+
+        width: 1080px;
+        height: 1350px;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+
+        background: #333;
+    }
+
+    .canvas-background {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .element {
+        position: absolute;
+    }
+
+    .logo {
+        object-fit: contain;
+    }
+
+    .text {
+        white-space: pre-line;
+    }
+
+    /* Vorschau auf kleineren Bildschirmen */
+    @media (max-width: 1400px) {
+        #canvas {
+            transform-origin: top left;
+            transform: scale(0.7);
+            margin-right: -324px;
+            margin-bottom: -405px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .app {
+            flex-direction: column;
+        }
+
+        .editor {
+            width: 100%;
+        }
+
+        .preview-area {
+            padding: 20px;
+        }
+
+        #canvas {
+            transform: scale(0.45);
+            margin-right: -594px;
+            margin-bottom: -742px;
+        }
+    }
+
+
+    /* presets */
+.team-name::before {
+    content: "";
+    position: absolute;
+    inset: 8px -20px;
+
+    background: #e30613;
+
+    clip-path: polygon(
+        0% 20%,
+        8% 12%,
+        20% 17%,
+        31% 8%,
+        45% 14%,
+        60% 6%,
+        75% 13%,
+        90% 9%,
+        100% 20%,
+
+        96% 40%,
+        100% 52%,
+        94% 67%,
+        80% 61%,
+        65% 73%,
+        50% 65%,
+        35% 76%,
+        20% 66%,
+        8% 72%,
+        0% 58%
+    );
+}    
+
+.brush-text {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brush-background {
+    position: absolute;
+    inset: -20px -3px;
+
+    background: #e30613;
+
+    clip-path: polygon(
+        /* obere Kante */
+        0% 25%,
+        2% 20%,
+        4% 23%,
+        6% 17%,
+        8% 21%,
+        10% 13%,
+        12% 19%,
+        14% 15%,
+        16% 20%,
+        18% 11%,
+        20% 17%,
+        23% 13%,
+        25% 18%,
+        28% 10%,
+        30% 16%,
+        33% 12%,
+        36% 17%,
+        39% 9%,
+        42% 15%,
+        45% 11%,
+        48% 17%,
+        51% 12%,
+        54% 18%,
+        57% 10%,
+        60% 16%,
+        63% 12%,
+        66% 18%,
+        69% 9%,
+        72% 15%,
+        75% 11%,
+        78% 18%,
+        81% 12%,
+        84% 19%,
+        87% 14%,
+        90% 20%,
+        93% 15%,
+        96% 23%,
+        100% 20%,
+
+        /* rechte Kante */
+        98% 31%,
+        100% 38%,
+        97% 44%,
+        100% 51%,
+        96% 57%,
+
+        /* untere Kante */
+        98% 67%,
+        94% 64%,
+        91% 72%,
+        88% 66%,
+        85% 76%,
+        82% 68%,
+        78% 74%,
+        74% 67%,
+        70% 78%,
+        66% 69%,
+        62% 75%,
+        58% 68%,
+        54% 77%,
+        50% 69%,
+        46% 74%,
+        42% 67%,
+        38% 78%,
+        34% 69%,
+        30% 75%,
+        26% 67%,
+        22% 76%,
+        18% 68%,
+        14% 73%,
+        10% 65%,
+        7% 71%,
+        4% 63%,
+        1% 67%,
+
+        /* linke Kante */
+        3% 57%,
+        0% 49%,
+        3% 41%,
+        1% 34%
+    );
+}
+
+.brush-label {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="app">
+
+
+<!-- ==================================================
+     EDITOR
+=================================================== -->
+
+<aside class="editor">
+    <div class="template-selector">
+        <label for="templateSelect">
+            Template
+        </label>
+
+        <select id="templateSelect">
+            <option value="">Template auswählen...</option>
+        </select>
+    </div>
+
+    <h1>Einstellungen</h1>
+
+    <div id="form"></div>
+
+    <button id="export">
+        PNG erzeugen
+    </button>
+
+    <div id="status" class="status"></div>
+
+</aside>
+
+
+<!-- ==================================================
+     PREVIEW
+=================================================== -->
+
+<main class="preview-area">
+
+    <div id="canvas">
+        <!-- Wird dynamisch aus dem JSON-Template erzeugt -->
+    </div>
+
+</main>
+```
+
+</div>
+
+<script>
+
+let template = null;
+let values = {};
+let templateList = [];
+
+/* ======================================================
+   Template laden
+====================================================== */
+async function loadTemplateList() {
+    const response = await fetch("templates.json");
+
+    if (!response.ok) {
+        throw new Error("templates.json konnte nicht geladen werden");
+    }
+
+    const data = await response.json();
+
+    templateList = data.templates;
+
+    const select = document.getElementById("templateSelect");
+
+    select.innerHTML = `
+        <option value="">Template auswählen...</option>
+    `;
+
+    for (const item of templateList) {
+        const option = document.createElement("option");
+
+        option.value = item.file;
+        option.textContent = item.name;
+
+        select.appendChild(option);
+    }
+}
+
+
+async function loadTemplate(file) {
+    if (!file) {
+        return;
+    }
+
+    const response = await fetch(file);
+
+    if (!response.ok) {
+        throw new Error(`Template konnte nicht geladen werden: ${file}`);
+    }
+
+    template = await response.json();
+
+    values = {};
+
+    createForm();
+    render();
+}
+
+
+/* ======================================================
+   Anwendung initialisieren
+====================================================== */
+
+function initialise() {
+
+    createForm();
+    render();
+
+}
+
+
+/* ======================================================
+   Formular aus JSON erzeugen
+====================================================== */
+
+function createForm() {
+
+    const form = document.getElementById("form");
+
+    form.innerHTML = "";
+
+    for (const field of template.fields) {
+
+        values[field.id] =
+            field.default ?? "";
+
+        const wrapper = document.createElement("div");
+
+        wrapper.className = "field";
+
+        const label = document.createElement("label");
+
+        label.textContent = field.label;
+
+        wrapper.appendChild(label);
+
+
+        const input = document.createElement("input");
+
+        input.type = field.type || "text";
+
+        input.value = values[field.id];
+
+        input.placeholder =
+            field.placeholder || "";
+
+        input.addEventListener("input", () => {
+
+            values[field.id] = input.value;
+
+            render();
+
+        });
+
+        wrapper.appendChild(input);
+
+        form.appendChild(wrapper);
+
+    }
+
+}
+
+
+/* ======================================================
+   Template rendern
+====================================================== */
+
+function render() {
+
+    const canvas =
+        document.getElementById("canvas");
+
+    canvas.innerHTML = "";
+
+
+    /*
+     * Hintergrund
+     */
+
+    if (template.background) {
+
+        const background =
+            document.createElement("img");
+
+        background.src =
+            template.background;
+
+        background.className =
+            "canvas-background";
+
+        canvas.appendChild(background);
+
+    }
+
+
+    /*
+     * Elemente
+     */
+
+    for (const element of template.elements) {
+
+        const node =
+            document.createElement("img");
+
+        /*
+         * Text-Elemente werden separat behandelt.
+         */
+
+        if (element.type === "text") {
+
+            const text =
+                document.createElement("div");
+
+            text.className =
+                "element text";
+
+            text.textContent =
+                resolveValue(element.value);
+
+            applyPosition(
+                text,
+                element
+            );
+
+            applyTextStyle(
+                text,
+                element
+            );
+
+            canvas.appendChild(text);
+
+        }
+
+
+        /*
+         * Bild-Elemente
+         */
+
+        else if (element.type === "image") {
+
+            const image =
+                document.createElement("img");
+
+            image.className =
+                "element logo";
+
+            image.src =
+                resolveValue(element.value);
+
+            applyPosition(
+                image,
+                element
+            );
+
+            canvas.appendChild(image);
+
+        }
+        /*
+         * Pinsel-Text-Elemente
+         */
+        else if (element.type === "brushText") {
+
+            const wrapper = document.createElement("div");
+
+            wrapper.className = "element brush-text";
+
+            applyPosition(wrapper, element);
+
+            const background = document.createElement("div");
+
+            background.className = "brush-background";
+
+            if (element.brush?.color) {
+                background.style.backgroundColor =
+                    element.brush.color;
+            }
+
+            if (element.brush?.rotation) {
+                background.style.transform =
+                    `rotate(${element.brush.rotation}deg)`;
+            }
+
+            wrapper.appendChild(background);
+
+
+            const text = document.createElement("div");
+
+            text.className = "brush-label";
+
+            text.textContent =
+                resolveValue(element.value);
+
+            applyTextStyle(text, element);
+
+            wrapper.appendChild(text);
+
+            canvas.appendChild(wrapper);
+        }
+    }
+
+}
+
+
+/* ======================================================
+   {{field}} Werte aus JSON ersetzen
+====================================================== */
+
+function resolveValue(value) {
+
+    if (typeof value !== "string") {
+        return value;
+    }
+
+    return value.replace(
+        /\{\{([^}]+)\}\}/g,
+        (match, key) => {
+
+            return values[key.trim()] ?? "";
+
+        }
+    );
+
+}
+
+
+/* ======================================================
+   Position eines Elements
+====================================================== */
+
+function applyPosition(node, element) {
+
+    node.style.left =
+        `${element.x}px`;
+
+    node.style.top =
+        `${element.y}px`;
+
+    if (element.width) {
+
+        node.style.width =
+            `${element.width}px`;
+
+    }
+
+    if (element.height) {
+
+        node.style.height =
+            `${element.height}px`;
+
+    }
+
+}
+
+
+/* ======================================================
+   Text-Styling
+====================================================== */
+
+function applyTextStyle(node, element) {
+
+    if (element.font) {
+        const font = template.fonts?.[element.font] || element.font;
+        node.style.fontFamily = `"${font}", sans-serif`;
+    }
+
+    if (element.fontSize) {
+        node.style.fontSize = `${element.fontSize}px`;
+    }
+
+    if (element.fontWeight) {
+        node.style.fontWeight = element.fontWeight;
+    }
+
+    if (element.letterSpacing) {
+        node.style.letterSpacing = `${element.letterSpacing}px`;
+    }
+
+    if (element.color) {
+        node.style.color = element.color;
+    }
+
+    if (element.textAlign) {
+        node.style.textAlign = element.textAlign;
+    }
+
+    if (element.width) {
+        node.style.width = `${element.width}px`;
+    }
+
+    if (element.lineHeight) {
+        node.style.lineHeight = element.lineHeight;
+    }
+}
+
+async function init() {
+    try {
+        await loadTemplateList();
+    } catch (error) {
+        console.error(error);
+        alert("Templates konnten nicht geladen werden.");
+    }
+}
+
+/* ======================================================
+   PNG exportieren
+====================================================== */
+
+async function exportPNG() {
+
+    const status =
+        document.getElementById("status");
+
+    status.textContent =
+        "PNG wird erzeugt...";
+
+    try {
+
+        const canvas =
+            document.getElementById("canvas");
+
+        const dataUrl =
+            await htmlToImage.toPng(
+                canvas,
+                {
+                    width: template.width,
+                    height: template.height,
+                    pixelRatio: 1
+                }
+            );
+
+
+        /*
+         * Download
+         */
+
+        const link =
+            document.createElement("a");
+
+        link.download =
+            "spielankuendigung.png";
+
+        link.href =
+            dataUrl;
+
+        link.click();
+
+        status.textContent =
+            "PNG wurde erzeugt.";
+
+    } catch (error) {
+
+        console.error(error);
+
+        status.textContent =
+            "Fehler beim Erzeugen des PNG.";
+
+    }
+
+}
+
+
+/* ======================================================
+   Export Button
+====================================================== */
+
+document
+    .getElementById("export")
+    .addEventListener(
+        "click",
+        exportPNG
+    );
+
+document
+    .getElementById("templateSelect")
+    .addEventListener("change", async (event) => {
+
+        const file = event.target.value;
+
+        if (!file) {
+            return;
+        }
+
+        try {
+            await loadTemplate(file);
+        } catch (error) {
+            console.error(error);
+            alert("Template konnte nicht geladen werden.");
+        }
+    });
+
+/* ======================================================
+   Start
+====================================================== */
+
+init();
+
+</script>
+
+</body>
+</html>
